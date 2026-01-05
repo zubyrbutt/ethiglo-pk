@@ -88,6 +88,7 @@ body {
 .btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 16px 32px;
     border-radius: 12px;
@@ -95,6 +96,8 @@ body {
     font-size: 1.125rem;
     text-decoration: none;
     transition: all 0.2s ease;
+    width: 100%;
+    max-width: 320px;
 }
 
 .btn-primary {
@@ -107,6 +110,18 @@ body {
     background: var(--primary-hover);
     transform: translateY(-2px);
     box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+}
+
+.btn-whatsapp {
+    background: var(--whatsapp);
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(37, 211, 102, 0.2);
+}
+
+.btn-whatsapp:hover {
+    background: var(--whatsapp-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(37, 211, 102, 0.3);
 }
 
 .email-display {
